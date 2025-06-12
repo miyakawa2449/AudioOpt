@@ -54,42 +54,6 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# 音声ファイル（大容量のため除外）
-*.wav
-*.mp3
-*.flac
-*.ogg
-*.m4a
-
-# データセット関連（除外）
-dataset/audio_files/
-dataset/meta_files/
-dataset/processed/
-dataset/backup_original_names/
-
-# モデルファイル（大容量のため除外）
-models/*.pth
-models/*.pt
-models/*.ckpt
-
-# 出力ファイル
-output/
-temp/
-tmp/
-
-# ログファイル
-*.log
-logs/
-
-# 一時ファイル
-*.tmp
-*.temp
-.cache/
-
-# テストファイル
-test_outputs/
-experiments/
-
 # データセット関連（除外、ただし.gitkeepは含める）
 dataset/audio_files/*
 !dataset/audio_files/.gitkeep
@@ -109,4 +73,26 @@ models/*.ckpt
 output/*
 !output/.gitkeep
 
-# ... 他の設定は既存のまま
+# ログファイル
+*.log
+logs/
+
+# 一時ファイル
+*.tmp
+*.temp
+.cache/
+temp/
+tmp/
+
+# テストファイル
+test_outputs/
+experiments/
+
+# ユーティリティスクリプト（ローカル用、リポジトリには不要）
+rename_*.py
+rename_all_files.py
+rename_audio_files.py
+
+# 不正なファイル名（末尾にコロンがあるファイル）
+*:
+*:*
