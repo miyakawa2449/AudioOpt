@@ -89,3 +89,24 @@ logs/
 # テストファイル
 test_outputs/
 experiments/
+
+# データセット関連（除外、ただし.gitkeepは含める）
+dataset/audio_files/*
+!dataset/audio_files/.gitkeep
+dataset/meta_files/*  
+!dataset/meta_files/.gitkeep
+dataset/processed/*
+!dataset/processed/.gitkeep
+dataset/backup_original_names/
+
+# モデルファイル（除外、ただし.gitkeepは含める）
+models/*.pth
+models/*.pt
+models/*.ckpt
+!models/.gitkeep
+
+# 出力ファイル（除外、ただし.gitkeepは含める）
+output/*
+!output/.gitkeep
+
+# ... 他の設定は既存のまま
